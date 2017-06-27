@@ -1,19 +1,27 @@
 <html>
+	<head>
+		<style>
+			body {
+				font-family: Helvetica, sans; width: 960px; margin-left: auto; margin-right:auto;
+				font-size: 18px;
+			}
+			table { border: solid 3px #ddd; font-size: 18px;}
+			.warning { border: solid 6px #ed263a; padding: 12px; }
+		</style>
+	</head>
 <body>
-<h2>Interval URI Set Test Page</h2>
 
-<h3>This is an experimental site it is unstable and could disappear
-or change at anytime and without notice.</h3>
+<h1>Interval URI Set Test Page</h1>
+
+<h2 class="warning">This is an experimental site it is unstable and could disappear
+or change at anytime and without notice.</h2>
 
 <p>If your are using Firefox, fire up the Tabulator extension and
 then try a couple of the URIs</p>
 
-<p><a href='cal/id/calendar-month/1582-10'>October 1582</a>, the month
-of the Julian to Gregorian change over</p>
-
 <p>URI have the following forms which designate <em>calendar-aligned</em> intevals:</p>
 
-<table border="1">
+<table width="100%" cellpadding="2" cellspacing="4">
 	<tr>
 		<td>id/calendar-year/{year}</td>
 		<td>A specific 1 year interval.</td>
@@ -53,7 +61,7 @@ ISO 8601 syntax, with the deliberate omission of timezones (for now).
  Syntactic constraints are as follows (in addition requests for
 non-existant dates will result in 404 responses).</p>
 
-<table border="1">
+<table width="100%;" cellpadding="2" cellspacing="4">
 	<tr>
 		<td>{year:[1-9][0-9]*}</td>
 		<td>Year in as decimal number without leading zeros</td>
